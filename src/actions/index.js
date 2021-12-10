@@ -16,10 +16,10 @@ export const fetchSmurfs = () =>{
                 dispatch(fetchSuccess(resp.data))
             })
             .catch(err=>{
-               dispatch(fetchError(err))
-            })
-    }
-}
+                dispatch(fetchError(err))
+             })
+     }
+ }
 export const fetchStart = () => {
     return({type: FETCH_START})
 }

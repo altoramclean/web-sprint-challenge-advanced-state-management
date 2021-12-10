@@ -10,10 +10,11 @@ import reducer from './reducers';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 
+
 const { worker } = require('./mocks/browser');
 worker.start();
 
-const store = createStore(reducer, applyMiddleware(thunk, logger))
+const store = createStore(reducer, applyMiddleware(thunk, logger));
 
 const rootElement = document.getElementById("root");
 
